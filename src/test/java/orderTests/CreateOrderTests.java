@@ -65,7 +65,7 @@ public class CreateOrderTests extends Base {
 
         Ingredients ingredientsForAdd = response.as(Ingredients.class);
         Ingredient ingredient = ingredientsForAdd.getIngredientWithName("Флюоресцентная булка R2-D3");
-        ingredients.add(ingredient.get_id());
+        ingredients.add(ingredient.getId());
 
 
         Order order = new Order();
@@ -95,7 +95,7 @@ public class CreateOrderTests extends Base {
 
         Ingredients ingredientsForAdd = response.as(Ingredients.class);
         Ingredient ingredient = ingredientsForAdd.getIngredientWithName("Кристаллы марсианских альфа-сахаридов");
-        ingredients.add(ingredient.get_id());
+        ingredients.add(ingredient.getId());
 
 
         Order order = new Order();

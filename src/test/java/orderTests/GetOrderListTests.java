@@ -32,7 +32,7 @@ public class GetOrderListTests extends Base {
 
         Ingredients ingredientsForAdd = response.as(Ingredients.class);
         Ingredient ingredient = ingredientsForAdd.getIngredientWithName("Флюоресцентная булка R2-D3");
-        ingredients.add(ingredient.get_id());
+        ingredients.add(ingredient.getId());
 
         Order order = new Order();
         order.setIngredients(ingredients);
